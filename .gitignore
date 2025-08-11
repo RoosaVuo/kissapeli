@@ -1,3 +1,18 @@
-# Godot 4+ specific ignores
+# Godot-specific ignores
+
+# The .import/ folder contains imported resources.
+.import/
+
+# The .godot/ folder contains Godot's metadata and cache.
 .godot/
-/android/
+
+# Imported resource metadata (binary cache files)
+*.import
+
+# Export presets (often contain absolute paths)
+export_presets.cfg
+
+# Mono-specific ignores (if using C# in Godot)
+.mono/
+data_*/
+mono_crash.*.json
